@@ -7,83 +7,86 @@
  * @authorId 402784497290051594
 */
 
-/* 
+/**
  * CHAT INPUT VARIABLES FIX
  */
 
 /* chat input attach button icon size fix */
 .attachButtonInner__0923f > svg {
-    width: var(--chat-input-icon-size);
-    height: var(--chat-input-icon-size);
+  width: var(--chat-input-icon-size);
+  height: var(--chat-input-icon-size);
 }
 
 /* chat input app icon (in place of attach button) icon size fix */
 .icon__4d3a9 svg {
-    width: var(--chat-input-icon-size);
-    height: var(--chat-input-icon-size);
+  width: var(--chat-input-icon-size);
+  height: var(--chat-input-icon-size);
 }
 
 /* chat input buttons lottie size fix */
 .lottieIcon__5eb9b {
-    width: var(--chat-input-icon-size) !important;
-    height: var(--chat-input-icon-size) !important;
+  width: var(--chat-input-icon-size) !important;
+  height: var(--chat-input-icon-size) !important;
 }
 
 .icon__4d3a9 {
-    /* make app icon behave somewhat like attach button */
-    padding: var(--space-12) var(--space-md) !important;
+  /* make app icon behave somewhat like attach button */
+  padding: var(--space-12) var(--space-md) !important;
 }
 
 /* smaller paddings in context menus */
 :where(.visual-refresh) .labelContainer_c1e9c4 {
-    padding: 6px;
+  padding: 6px;
 }
 
 .visual-refresh {
-    /* 
-     * FLOATING PANEL
-     */
+  /**
+   * FLOATING PANEL
+   */
 
-    /* floating panel over channels list */
-    .panels_c48ade {
-        left: calc(var(--space-xs) + var(--custom-guild-list-width));
-        width: calc(100% - var(--custom-guild-list-width) - var(--space-xs) * 2);
-    }
+  /* floating panel over channels list */
+  .panels_c48ade {
+    left: calc(var(--space-xs) + var(--custom-guild-list-width));
+    width: calc(100% - var(--custom-guild-list-width) - var(--space-xs) * 2);
+  }
 
-    /* remove gap in server list because of moved floating panels */
-    .guilds_c48ade {
-        margin-bottom: 0;
-    }
+  /* remove gap in server list because of moved floating panels */
+  .guilds_c48ade {
+    margin-bottom: 0;
+  }
 
-    /* 
-     * CHAT INPUT
-     */
+  /**
+   * CHAT INPUT
+   */
 
-    /* old height of chat input */
-    --custom-channel-textarea-text-area-height: 44px;
+  /* old height of chat input */
+  --custom-channel-textarea-text-area-height: 44px;
 
-    /* enlarge gap between chat input and messages */
-    .scrollerSpacer__36d07 {
-        height: var(--space-26);
-    }
+  /* enlarge gap between chat input and messages */
+  .scrollerSpacer__36d07 {
+    height: var(--space-26);
+  }
 
-    /* enlarge margin of textarea */
-    .form_f75fb0 {
-        padding-left: var(--space-md);
-        padding-right: var(--space-md);
-    }
+  /* enlarge margin of textarea */
+  .form_f75fb0 {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
 
-    /* less gap after attach button */
-    .attachButton__0923f, .icon__4d3a9 {
-        padding-right: var(--space-8) !important;
-    }
+  /* less gap after attach button */
+  .attachButton__0923f, .icon__4d3a9 {
+    padding-right: var(--space-8) !important;
+  }
 
-    /* 
-     * MISC
-     */
-    /* fix margins on unreads bar (LMAO) */
-    .barBase__0f481 {
-        left: var(--space-8);
-        right: var(--space-8);
-    }
+  /**
+   * MISC
+   */
+
+  /* fix margins on unreads bar (LMAO) */
+  .barBase__0f481 {
+    left: var(--space-8);
+    right: var(--space-8);
+    padding-left: var(--space-8);
+    padding-right: var(--space-8);
+  }
 }
