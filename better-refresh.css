@@ -90,4 +90,9 @@
     padding-left: var(--space-8);
     padding-right: var(--space-8);
   }
+  
+  /* fix misaligned width of channel scroller content and floating panel */
+  .scroller__629e4 {
+    margin-right: 0;
+  }
 }
