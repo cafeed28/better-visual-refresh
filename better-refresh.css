@@ -47,6 +47,7 @@
   /* floating panel over channels list */
   .panels_c48ade {
     left: calc(var(--space-xs) + var(--custom-guild-list-width));
+    bottom: 12px;
     width: calc(100% - var(--custom-guild-list-width) - var(--space-xs) * 2);
   }
 
