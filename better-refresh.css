@@ -29,14 +29,20 @@
   height: var(--chat-input-icon-size) !important;
 }
 
+/* make app icon behave somewhat like attach button */
 .icon__4d3a9 {
-  /* make app icon behave somewhat like attach button */
   padding: var(--space-12) var(--space-md) !important;
 }
 
 /* smaller paddings in context menus */
 :where(.visual-refresh) .labelContainer_c1e9c4 {
   padding: 6px;
+}
+
+/* disable fade animation when switching between images in new media viewer */
+.base__5cd44 {
+  animation: none;
+  opacity: 1;
 }
 
 .visual-refresh {
