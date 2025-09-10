@@ -8,26 +8,36 @@
 */
 
 /**
- * CHAT INPUT VARIABLES FIX
+ * ICON SIZE FIXES
  */
 
-/* chat input attach button icon size fix */
+/* inbox button */
+.clickable_c99c29 > svg {
+  width: var(--chat-input-icon-size);
+  height: var(--chat-input-icon-size);
+}
+
+/* chat input attach button */
 .attachButtonInner__0923f > svg {
   width: var(--chat-input-icon-size);
   height: var(--chat-input-icon-size);
 }
 
-/* chat input app icon (in place of attach button) icon size fix */
+/* chat input app icon (in place of attach button) */
 .icon__4d3a9 svg {
   width: var(--chat-input-icon-size);
   height: var(--chat-input-icon-size);
 }
 
-/* chat input buttons lottie size fix */
+/* chat input buttons lottie */
 .lottieIcon__5eb9b {
   width: var(--chat-input-icon-size) !important;
   height: var(--chat-input-icon-size) !important;
 }
+
+/**
+ * VARIABLE FIXES
+ */
 
 /* make app icon behave somewhat like attach button */
 .icon__4d3a9 {
@@ -53,7 +63,6 @@
   /* floating panel over channels list */
   .panels_c48ade {
     left: calc(var(--space-xs) + var(--custom-guild-list-width));
-    bottom: 12px;
     width: calc(100% - var(--custom-guild-list-width) - var(--space-xs) * 2);
   }
 
@@ -62,16 +71,31 @@
     margin-bottom: 0;
   }
 
+  /* restore text-sm instead of text-md for username */
+  .panelTitleContainer__37e49 div {
+    /* copied from text-sm/medium_cf4812 */
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-weight: 500;
+  }
+
   /**
    * CHAT INPUT
    */
 
-  /* old height of chat input */
-  --custom-channel-textarea-text-area-height: 44px;
-
-  /* enlarge gap between chat input and messages */
+  /* less gap between chat input and messages */
   .scrollerSpacer__36d07 {
     height: var(--space-26);
+  }
+
+  /* old height of chat input */
+  --custom-channel-textarea-text-area-height: 42px;
+  .channelTextArea__74017 {
+    /*
+      66px: from bottom of window to top of floating panel
+      2px: chat input border
+      */
+    --custom-chat-input-margin-bottom: calc(66px - 2px - var(--custom-channel-textarea-text-area-height));
   }
 
   /* enlarge margin of textarea */
@@ -80,9 +104,18 @@
     padding-right: var(--space-md);
   }
 
+  /* fix attach button wrapper padding to be dynamic for text area height */
+  .attachWrapper__0923f {
+    padding: calc((var(--custom-channel-textarea-text-area-height) - 32px) / 2) calc(var(--space-md) - 6px);
+  }
+
   /* less gap after attach button */
   .attachButton__0923f, .icon__4d3a9 {
-    padding-right: var(--space-8) !important;
+    margin-right: 3px !important;
+  }
+
+  .chatTypingGradientAtBottom__36d07, .chatTypingGradientNotAtBottom__36d07 {
+    display: none;
   }
 
   /**
@@ -100,5 +133,25 @@
   /* fix misaligned width of channel scroller content and floating panel */
   .scroller__629e4 {
     margin-right: 0;
+  }
+}
+
+/* move typing indicator under the chat input */
+.align-chat-input {
+  .inTextChannel_b88801.base_b88801 {
+    top: unset;
+    bottom: 0px;
+  }
+
+  .inTextChannel_b88801 {
+    /* align to left (margin of 8px remains, i like it) */
+    .text_b88801 {
+      margin-left: 0px;
+    }
+
+    /* i hate typing indicator */
+    .typingDots_b88801 svg {
+      display: none;
+    }
   }
 }
