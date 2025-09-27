@@ -137,21 +137,19 @@
 }
 
 /* move typing indicator under the chat input */
-.align-chat-input {
-  .inTextChannel_b88801.base_b88801 {
-    top: unset;
-    bottom: 0px;
+.inTextChannel_b88801.base_b88801 {
+  top: unset;
+  bottom: 0px;
+}
+
+.inTextChannel_b88801 {
+  /* align to left (margin of 8px remains, i like it) */
+  .text_b88801 {
+    margin-left: 0px;
   }
 
-  .inTextChannel_b88801 {
-    /* align to left (margin of 8px remains, i like it) */
-    .text_b88801 {
-      margin-left: 0px;
-    }
-
-    /* i hate typing indicator */
-    .typingDots_b88801 svg {
-      display: none;
-    }
+  /* i hate typing indicator */
+  .typingDots_b88801 svg {
+    display: none;
   }
 }
