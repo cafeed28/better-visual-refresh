@@ -61,18 +61,20 @@
    */
 
   /* floating panel over channels list */
-  .panels_c48ade {
+  .panels__5e434 {
     left: calc(var(--space-xs) + var(--custom-guild-list-width));
     width: calc(100% - var(--custom-guild-list-width) - var(--space-xs) * 2);
   }
 
   /* remove gap in server list because of moved floating panels */
-  .guilds_c48ade {
+  .guilds__5e434 {
     margin-bottom: 0;
   }
 
-  /* restore text-sm instead of text-md for username */
-  .panelTitleContainer__37e49 div {
+  /* restore text-sm instead of text-md for username, activity name, voice rtc status */
+  .panelTitleContainer__37e49 div,
+  .clickableGameName__8c6c2 div,
+  .rtcConnectionStatusLabel__06d62 div {
     /* copied from text-sm/medium_cf4812 */
     font-family: var(--font-primary);
     font-size: 14px;
