@@ -12,25 +12,25 @@
  */
 
 /* inbox button */
-.clickable_c99c29 > svg {
+.c99c29809d200a61-clickable > svg {
   width: var(--chat-input-icon-size);
   height: var(--chat-input-icon-size);
 }
 
 /* chat input attach button */
-.attachButtonInner__0923f > svg {
+._0923f156a0410684-attachButtonInner > svg {
   width: var(--chat-input-icon-size);
   height: var(--chat-input-icon-size);
 }
 
 /* chat input app icon (in place of attach button) */
-.icon__4d3a9 svg {
+._4d3a93bb8f6e0dd9-icon svg {
   width: var(--chat-input-icon-size);
   height: var(--chat-input-icon-size);
 }
 
 /* chat input buttons lottie */
-.lottieIcon__5eb9b {
+._5eb9b3cc7c2b1ce8-lottieIcon {
   width: var(--chat-input-icon-size) !important;
   height: var(--chat-input-icon-size) !important;
 }
@@ -40,17 +40,17 @@
  */
 
 /* make app icon behave somewhat like attach button */
-.icon__4d3a9 {
+._4d3a93bb8f6e0dd9-icon {
   padding: var(--space-12) var(--space-md) !important;
 }
 
 /* smaller paddings in context menus */
-:where(.visual-refresh) .labelContainer_c1e9c4 {
+:where(.visual-refresh) .c1e9c47c23f12ca3-labelContainer {
   padding: 6px;
 }
 
 /* disable fade animation when switching between images in new media viewer */
-.base__5cd44 {
+._5cd4440e78ca4a65-base {
   animation: none;
   opacity: 1;
 }
@@ -61,21 +61,21 @@
    */
 
   /* floating panel over channels list */
-  .panels__5e434 {
+  ._5e434347c823b592-panels {
     left: calc(var(--space-xs) + var(--custom-guild-list-width));
     width: calc(100% - var(--custom-guild-list-width) - var(--space-xs) * 2);
   }
 
   /* remove gap in server list because of moved floating panels */
-  .guilds__5e434 {
+  ._5e434347c823b592-guilds {
     margin-bottom: 0;
   }
 
   /* restore text-sm instead of text-md for username, activity name, voice rtc status */
-  .panelTitleContainer__37e49 div,
-  .clickableGameName__8c6c2 div,
-  .rtcConnectionStatusLabel__06d62 div {
-    /* copied from text-sm/medium_cf4812 */
+  ._37e49614b9f110a9-panelTitleContainer div,
+  ._8c6c22ea0d0f0ea2-clickableGameName div,
+  ._06d6249a1f2584ac-rtcConnectionStatusLabel div {
+    /* copied from cf48127484dbde85-text-sm/medium */
     font-family: var(--font-primary);
     font-size: 14px;
     font-weight: 500;
@@ -86,13 +86,13 @@
    */
 
   /* less gap between chat input and messages */
-  .scrollerSpacer__36d07 {
+  ._36d072eab2b2e737-scrollerSpacer {
     height: var(--space-26);
   }
 
   /* old height of chat input */
   --custom-channel-textarea-text-area-height: 42px;
-  .channelTextArea__74017 {
+  ._740174f3d6a2c8fe-channelTextArea {
     /*
       66px: from bottom of window to top of floating panel
       2px: chat input border
@@ -101,22 +101,22 @@
   }
 
   /* enlarge margin of textarea */
-  .form_f75fb0 {
+  .f75fb00fb7356cbe-form {
     padding-left: var(--space-md);
     padding-right: var(--space-md);
   }
 
   /* fix attach button wrapper padding to be dynamic for text area height */
-  .attachWrapper__0923f {
+  ._0923f156a0410684-attachWrapper {
     padding: calc((var(--custom-channel-textarea-text-area-height) - 32px) / 2) calc(var(--space-md) - 6px);
   }
 
   /* less gap after attach button */
-  .attachButton__0923f, .icon__4d3a9 {
+  ._0923f156a0410684-attachButton, ._4d3a93bb8f6e0dd9-icon {
     margin-right: 3px !important;
   }
 
-  .chatTypingGradientAtBottom__36d07, .chatTypingGradientNotAtBottom__36d07 {
+  ._36d072eab2b2e737-chatTypingGradientAtBottom, ._36d072eab2b2e737-chatTypingGradientNotAtBottom {
     display: none;
   }
 
@@ -125,7 +125,7 @@
    */
 
   /* fix margins on unreads bar (LMAO) */
-  .barBase__0f481 {
+  ._0f481cbbd7530492-barBase {
     left: var(--space-8);
     right: var(--space-8);
     padding-left: var(--space-8);
@@ -133,25 +133,25 @@
   }
   
   /* fix misaligned width of channel scroller content and floating panel */
-  .scroller__629e4 {
+  ._629e4c86564a4ee7-scroller {
     margin-right: 0;
   }
 }
 
 /* move typing indicator under the chat input */
-.inTextChannel_b88801.base_b88801 {
+.b8880176888cc928-inTextChannel.b8880176888cc928-base {
   top: unset;
   bottom: 0px;
 }
 
-.inTextChannel_b88801 {
+.b8880176888cc928-inTextChannel {
   /* align to left (margin of 8px remains, i like it) */
-  .text_b88801 {
+  .b8880176888cc928-text {
     margin-left: 0px;
   }
 
   /* i hate typing indicator */
-  .typingDots_b88801 svg {
+  .b8880176888cc928-typingDots svg {
     display: none;
   }
 }
