@@ -7,21 +7,21 @@
  * @authorId 402784497290051594
 */
 
-._23977d5b7cef7361-reaction .emoji {
+.reaction__23977 .emoji {
     width: 1rem;
     height: 1rem;
 }
 
-._23977d5b7cef7361-reactionBtn {
+.reactionBtn__23977 {
     width: 1rem;
     height: 1rem;
 }
 
-._23977d5b7cef7361-icon {
+.icon__23977 {
     width: 1rem;
     height: 1rem;
 }
 
-._23977d5b7cef7361-reactionBtn._23977d5b7cef7361-forceShow {
+.reactionBtn__23977.forceShow__23977 {
     padding: .25rem .375rem;
 }
