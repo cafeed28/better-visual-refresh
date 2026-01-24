@@ -97,7 +97,9 @@
       66px: from bottom of window to top of floating panel
       2px: chat input border
       */
-    --custom-chat-input-margin-bottom: calc(66px - 2px - var(--custom-channel-textarea-text-area-height));
+    --custom-chat-input-margin-bottom: calc(
+      66px - 2px - var(--custom-channel-textarea-text-area-height)
+    );
   }
 
   /* enlarge margin of textarea */
@@ -108,15 +110,18 @@
 
   /* fix attach button wrapper padding to be dynamic for text area height */
   .attachWrapper__0923f {
-    padding: calc((var(--custom-channel-textarea-text-area-height) - 32px) / 2) calc(var(--space-md) - 6px);
+    padding: calc((var(--custom-channel-textarea-text-area-height) - 32px) / 2)
+      calc(var(--space-md) - 6px);
   }
 
   /* less gap after attach button */
-  .attachButton__0923f, .icon__4d3a9 {
+  .attachButton__0923f,
+  .icon__4d3a9 {
     margin-right: 3px !important;
   }
 
-  .chatTypingGradientAtBottom__36d07, .chatTypingGradientNotAtBottom__36d07 {
+  .chatTypingGradientAtBottom__36d07,
+  .chatTypingGradientNotAtBottom__36d07 {
     display: none;
   }
 
@@ -131,7 +136,7 @@
     padding-left: var(--space-8);
     padding-right: var(--space-8);
   }
-  
+
   /* fix misaligned width of channel scroller content and floating panel */
   .scroller__629e4 {
     margin-right: 0;
