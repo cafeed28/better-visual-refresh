@@ -8,51 +8,12 @@
 */
 
 /**
- * ICON SIZE FIXES
- */
-
-/* inbox button */
-.clickable_c99c29 > svg {
-  width: var(--chat-input-icon-size);
-  height: var(--chat-input-icon-size);
-}
-
-/* chat input attach button */
-.attachButtonInner__0923f > svg {
-  width: var(--chat-input-icon-size);
-  height: var(--chat-input-icon-size);
-}
-
-/* chat input app icon (in place of attach button) */
-.icon__4d3a9 svg {
-  width: var(--chat-input-icon-size);
-  height: var(--chat-input-icon-size);
-}
-
-/* chat input buttons lottie */
-.lottieIcon__5eb9b {
-  width: var(--chat-input-icon-size) !important;
-  height: var(--chat-input-icon-size) !important;
-}
-
-/**
  * VARIABLE FIXES
  */
 
-/* make app icon behave somewhat like attach button */
-.icon__4d3a9 {
-  padding: var(--space-12) var(--space-md) !important;
-}
-
 /* smaller paddings in context menus */
-:where(.visual-refresh) .labelContainer_c1e9c4 {
+:where(.visual-refresh) .labelContainer_M3qk4j {
   padding: 6px;
-}
-
-/* disable fade animation when switching between images in new media viewer */
-.base__5cd44 {
-  animation: none;
-  opacity: 1;
 }
 
 .visual-refresh {
@@ -61,20 +22,21 @@
    */
 
   /* floating panel over channels list */
-  .panels__5e434 {
+  .panels_pog62O {
     left: calc(var(--space-xs) + var(--custom-guild-list-width));
     width: calc(100% - var(--custom-guild-list-width) - var(--space-xs) * 2);
   }
 
   /* remove gap in server list because of moved floating panels */
-  .guilds__5e434 {
+  .guilds_pog62O {
     margin-bottom: 0;
   }
 
-  /* restore text-sm instead of text-md for username, activity name, voice rtc status */
-  .panelTitleContainer__37e49 div,
-  .clickableGameName__8c6c2 div,
-  .rtcConnectionStatusLabel__06d62 div {
+  /* restore text-sm instead of text-md for username, activity name, voice rtc status, screen share */
+  .panelTitleContainer_g6VwXp div,
+  .clickableGameName_PY60v2 div,
+  .rtcConnectionStatusLabel_4LJE6I div,
+  .info_8eCwJY div {
     /* copied from text-sm/medium_cf4812 */
     font-family: var(--font-primary);
     font-size: 14px;
@@ -86,13 +48,13 @@
    */
 
   /* less gap between chat input and messages */
-  .scrollerSpacer__36d07 {
+  .scrollerSpacer_8AE1Qq {
     height: var(--space-26);
   }
 
   /* old height of chat input */
   --custom-channel-textarea-text-area-height: 42px;
-  .channelTextArea__74017 {
+  .channelTextArea_2x8-Qn {
     /*
       66px: from bottom of window to top of floating panel
       2px: chat input border
@@ -103,25 +65,25 @@
   }
 
   /* enlarge margin of textarea */
-  .form_f75fb0 {
+  .form_z_gUBg {
     padding-left: var(--space-md);
     padding-right: var(--space-md);
   }
 
   /* fix attach button wrapper padding to be dynamic for text area height */
-  .attachWrapper__0923f {
+  .attachWrapper_7TM4SO {
     padding: calc((var(--custom-channel-textarea-text-area-height) - 32px) / 2)
       calc(var(--space-md) - 6px);
   }
 
   /* less gap after attach button */
-  .attachButton__0923f,
-  .icon__4d3a9 {
+  .attachButton_7TM4SO,
+  .icon_kgeBdh {
     margin-right: 3px !important;
   }
 
-  .chatTypingGradientAtBottom__36d07,
-  .chatTypingGradientNotAtBottom__36d07 {
+  .chatTypingGradientAtBottom_8AE1Qq,
+  .chatTypingGradientNotAtBottom_8AE1Qq {
     display: none;
   }
 
@@ -130,7 +92,7 @@
    */
 
   /* fix margins on unreads bar (LMAO) */
-  .barBase__0f481 {
+  .barBase_j9Vvzj {
     left: var(--space-8);
     right: var(--space-8);
     padding-left: var(--space-8);
@@ -138,25 +100,25 @@
   }
 
   /* fix misaligned width of channel scroller content and floating panel */
-  .scroller__629e4 {
+  .scroller_ysO7Gy {
     margin-right: 0;
   }
 }
 
 /* move typing indicator under the chat input */
-.inTextChannel_b88801.base_b88801 {
+.inTextChannel_U9Tvvz.base_U9Tvvz {
   top: unset;
   bottom: 0px;
 }
 
-.inTextChannel_b88801 {
+.inTextChannel_U9Tvvz {
   /* align to left (margin of 8px remains, i like it) */
-  .text_b88801 {
+  .text_U9Tvvz {
     margin-left: 0px;
   }
 
   /* i hate typing indicator */
-  .typingDots_b88801 svg {
+  .dots_U9Tvvz * {
     display: none;
   }
 }
