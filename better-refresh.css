@@ -37,7 +37,7 @@
   .clickableGameName_PY60v2 div,
   .rtcConnectionStatusLabel_4LJE6I div,
   .perksDemoContainer_8eCwJY div,
-  .info_8eCwJY div {
+  .info_8eCwJY > div /* apply to the first child only, that is "Screen 1", don't apply to the screen resolution */ {
     /* copied from text-sm/medium_cf4812 */
     font-family: var(--font-primary);
     font-size: 14px;
